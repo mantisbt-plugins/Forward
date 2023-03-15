@@ -1,0 +1,11 @@
+<?php
+$s_plugin_forward_title       	= "Forward Issue";
+$s_plugin_forward_description	= "Allows forwarding of an issue to any email address";
+$s_plugin_forward_config      	= "Configuration";
+$s_plugin_forward_address		= "Default mail address";
+$s_plugin_forward_threshold   	= "Threshold to allow forwarding"; 
+$s_plugin_forward_message		= "Additional info for issue";
+$s_plugin_forward_explain		= "This message will be send to the listed recipient including an excerpt of the issue itself";
+$s_plugin_forward_issue			= " forwarded you this issue";
+$s_plugin_forward_customfields 	= "Customfields separated by comma"; 
+$s_plugin_forward_attachments  	= "Attachments ( not active yet)"; 
