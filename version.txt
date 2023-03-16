@@ -1,0 +1,3 @@
+Version: 2.10 #
+Devurl: https://github.com/mantisbt-plugins/Forward/blob/main/version.txt #
+Location: https://github.com/mantisbt-plugins/Forward/archive/refs/heads/main.zip #
