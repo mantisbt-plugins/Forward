@@ -21,4 +21,4 @@ plugin_config_set( 'forward_address', $f_forward_address );
 form_security_purge( 'plugin_forward_config_update' );
 
 # redirect
-print_successful_redirect( plugin_page( 'config', true ) );
+print_header_redirect( plugin_page( 'config', true ) );

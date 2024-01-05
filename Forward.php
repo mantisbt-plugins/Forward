@@ -6,7 +6,7 @@ class ForwardPlugin extends MantisPlugin {
 		$this->name = lang_get( 'plugin_forward_title' );
 		$this->description = lang_get( 'plugin_forward_description' );
 		$this->page = 'config';
-		$this->version = '2.10';
+		$this->version = '2.11';
 		$this->requires = array( 'MantisCore' => '2.0.0', );
 		$this->author = 'Cas Nuy';
 		$this->contact = 'cas@nuy.info';
