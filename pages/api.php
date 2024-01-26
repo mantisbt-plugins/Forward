@@ -3,8 +3,6 @@
 function savenote_query( $bug, $poster, $note ) {
     $now = time();
 
-    $note	= db_prepare_string( $note );
-
     # Add item to bugnotetext table
     $query = "INSERT INTO {bugnote_text} ( note ) VALUES ( '$note' )";
     $res1 = db_query($query);
