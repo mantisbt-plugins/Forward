@@ -3,6 +3,8 @@
 function savenote_query( $bug, $poster, $note ) {
     $now = time();
 
+    $note	= db_prepare_string( $note );
+
     # Add item to bugnotetext table
     $query = "INSERT INTO {bugnote_text} ( note ) VALUES ( '$note' )";
     $res1 = db_query($query);
@@ -22,7 +24,7 @@ function savenote_query( $bug, $poster, $note ) {
 
 // get customfield value
 function get_customfield_value($bugid, $field) {
-    $q = db_query("SELECT * FROM {custom_field_string} as A, $c_table as B WHERE B.id=A.field_id and bug_id = $bugid AND name='$field' ");
+    $q = db_query("SELECT * FROM {custom_field_string} as A, {custom_field} as B WHERE B.id=A.field_id and bug_id = $bugid AND name='$field' ");
     $r = db_fetch_array($q);
     return $r['value'];
     }

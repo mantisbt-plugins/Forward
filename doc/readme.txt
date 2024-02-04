@@ -17,4 +17,6 @@ Revision history
 1.1.0   			forward issue text is now stored as a bug note
 2.02	2018-11-01	Updated for Mantis 2.X
 2.10	2019-08-25	Option to include multiple Custom Fields in output
+2.11	2024-01-31	Added correct version.txt
+2.20	2024-02-04	Added printing of custom-fields and attachment overview
 					

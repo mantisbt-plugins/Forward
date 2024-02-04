@@ -47,8 +47,6 @@ print_manage_menu();
 				<input type="text" size="30" maxlength="200" name="forward_address" value="<?php echo plugin_config_get( 'forward_address'  )?>"/>
 			</td>
 		</tr>
-<?php
-/*		
 		<tr>
 			<td class="category">
 				<?php echo lang_get( 'plugin_forward_customfields' ) ?>
@@ -57,29 +55,22 @@ print_manage_menu();
 				<input type="text" size="80" maxlength="200" name="forward_cf" value="<?php echo plugin_config_get( 'forward_customfields'  )?>"/>
 			</td>
 		</tr>
-		
 		<tr >
 			<td class="category">
 				<?php echo lang_get( 'plugin_forward_attachments' ) ?>
 			</td>
 			<td >
 			<input id="forward_at" type="checkbox" name="forward_at" checked="checked" value="<?php echo plugin_config_get( 'forward_attachments'  )?>"/> Include 			</td>
-		</tr>
-*/
-?>
-		</table>
 </div>
 </div>
 <div class="widget-toolbox padding-8 clearfix">
 	<input type="submit" class="btn btn-primary btn-white btn-round" value="<?php echo lang_get( 'change_configuration' )?>" />
 </div>
+	</table>
 </div>
 </div>
 </form>
 </div>
 </div>
-	</table>
-<form>
-
 <?php
 layout_page_end();

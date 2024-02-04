@@ -61,8 +61,6 @@ $g_issue_send = plugin_page( 'issue_send.php' );
 	</td>
 
 </tr>
-<?php
-/*
 	<tr >
 			<td class="category">
 				<?php echo lang_get( 'plugin_forward_attachments' ) ?>
@@ -71,8 +69,15 @@ $g_issue_send = plugin_page( 'issue_send.php' );
 			<input id="forward_at" type="checkbox" name="forward_at" checked="checked" value="<?php echo plugin_config_get( 'forward_attachments'  )?>"/> Include 			</td>
 		</tr>
 <tr>
-*/
-?>
+</tr>
+	<tr >
+			<td class="category">
+				<?php echo lang_get( 'plugin_forward_customfields' ) ?>
+			</td>
+			<td >
+				<input type="text" size="80" maxlength="200" name="forward_cf" value="<?php echo plugin_config_get( 'forward_customfields'  )?>"/>
+		</tr>
+<tr>
 </div>
 </div>
 <div class="widget-toolbox padding-8 clearfix">
@@ -94,4 +99,3 @@ $g_issue_send = plugin_page( 'issue_send.php' );
 </div>
 <?php
 layout_page_end();
-
