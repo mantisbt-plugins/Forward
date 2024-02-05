@@ -9,3 +9,5 @@ $s_plugin_forward_explain		= "This message will be send to the listed recipient 
 $s_plugin_forward_issue			= " forwarded you this issue";
 $s_plugin_forward_customfields 	= "Customfields separated by comma"; 
 $s_plugin_forward_attachments  	= "Attachments overview"; 
+$s_plugin_forward_cc		  	= "Add Reporter as recipient"; 
+$s_plugin_forward_free		  	= "Allow user to override"; 

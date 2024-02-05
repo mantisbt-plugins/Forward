@@ -27,12 +27,18 @@ function get_customfield_value($bugid, $field) {
     $q = db_query("SELECT * FROM {custom_field_string} as A, {custom_field} as B WHERE B.id=A.field_id and bug_id = $bugid AND name='$field' ");
     $r = db_fetch_array($q);
     return $r['value'];
-    }
+}
 
+// get customfield type
+function get_customfield_type($bugid, $field) {
+    $q = db_query("SELECT * FROM {custom_field_string} as A, {custom_field} as B WHERE B.id=A.field_id and bug_id = $bugid AND name='$field' ");
+    $r = db_fetch_array($q);
+    return $r['type'];
+}
 
 //get all customfields in an array
 function get_customfields( ){
-	$qp = db_query("SELECT name FROM {custom_field} order by name");
+	$qp = db_query("SELECT name FROM {custom_field} where display_report =1 order by name");
 	$rp = "";
 	while($row =  db_fetch_array($qp)){
 		$rp .= $row['name'];
